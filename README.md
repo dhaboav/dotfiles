@@ -13,7 +13,7 @@ To set this up on a new system, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/dhaboav/dotfiles.git](https://github.com/dhaboav/dotfiles.git) ~/dotfiles
+   git clone https://github.com/dhaboav/dotfiles.git ~/dotfiles
    ```
 
 2. **Create the Symbolic Link:**
