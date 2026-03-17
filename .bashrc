@@ -29,25 +29,6 @@ colcon_pkg_sync() {
     fi
 }
 
-safety_remove() {
-    [[ $# -eq 0 ]] && { echo -e "${C_RED}[!]${C_RESET} No files specified."; return 1; }
-
-    # Pre-check critical paths to fail fast
-    for arg in "$@"; do
-        local full_path
-        full_path=$(realpath -m -- "$arg")
-        if [[ "$full_path" =~ ^(/|/etc|$HOME)$ ]]; then
-            echo -e "${C_RED}[!] Protection:${C_RESET} Refusing to trash $full_path"; return 1
-        fi
-    done
-
-    if gio trash -- "$@"; then
-        [[ $# -gt 1 ]] && printf "${C_RED}[X] Deleted:${C_RESET} %s\n" "$@" || echo -e "${C_RED}[X] Deleted:${C_RESET} $*"
-    else
-        echo -e "${C_RED}[!] Error:${C_RESET} gio trash failed."; return 1
-    fi
-}
-
 
 # --- Aliases ---
 # General Aliases
@@ -55,7 +36,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
-alias del='safety_remove'
 alias reload='source ~/.bashrc && echo "Terminal reloaded"'
 
 # ROS2 Aliases
