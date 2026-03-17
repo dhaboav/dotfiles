@@ -1,16 +1,16 @@
 #!/bin/bash
-# LAST UPDATE: TUESDAY, 17 MARCH 2026 9:30 A.M. (UTC)
+# LAST UPDATE: TUESDAY, 17 MARCH 2026 10:33 A.M. (UTC)
 
 set -e
 
 # --- ROS2 Version ---
-ROS_VERSION='jazzy'
+ROS_VERSION="jazzy"
 
 
 # --- Colors ---
-C_CYAN='\e[1;36m'
-C_GREEN='\e[1;32m'
-C_RESET='\e[0m'
+C_CYAN="\e[1;36m"
+C_GREEN="\e[1;32m"
+C_RESET="\e[0m"
 
 
 # --- Scripts ---
@@ -62,5 +62,5 @@ echo -e "${C_CYAN}Creating ROS2 workspace Complete!...${C_RESET}"
 
 # Testing ROS2
 echo -e "${C_GREEN}Running Talker demo ( Ctrl+C to stop )...${C_RESET}"
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/${ROS_VERSION}/setup.bash
 ros2 run demo_nodes_cpp talker

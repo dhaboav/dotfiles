@@ -9,6 +9,7 @@ Minimalist configuration for **ROS 2 Jazzy** terminal and other installation.
 
 ## ✨ Installation Features
 * **ROS2 and Colcon Integration:** Automatic install and configure ROS2, colcon, and ROS2 workspace.
+* **URDF and Gazebo Integration:** Automatic install urdf package and gazebo.
 
 ## 🛠 Installation
 
