@@ -36,6 +36,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
+alias update='sudo apt update && sudo apt upgrade -y'
 alias reload='source ~/.bashrc && echo "Terminal reloaded"'
 
 # ROS2 Aliases
