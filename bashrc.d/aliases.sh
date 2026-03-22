@@ -1,3 +1,5 @@
+# LAST UPDATE: SUNDAY, 22 MARCH 2026 06:13 A.M. (UTC)
+
 # General
 alias clear="command clear; unset __was_printed"
 alias update='sudo apt update && sudo apt upgrade -y'
