@@ -8,7 +8,7 @@ set -e
 # --- ROS2 Version ---
 ROS_VERSION="lyrical"
 WS_PATH="$HOME/Desktop/ros2_ws"
-TARGET_SHELL_RC="$HOME/.bashrc"
+TARGET_SHELL_RC="$HOME/.zshrc"
 
 # --- Steps ---
 # Step 1 (Configuring locale)
