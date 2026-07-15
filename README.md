@@ -8,6 +8,8 @@ Automated Linux (Ubuntu distro) setup scripts and configurations.
 
 `home/` Contains files mapped to the system `~/` directory(e.g., .zshrc).
 
+`notes/`: Contains self documentation for installation and setup procedures in a Linux environment.
+
 `scripts/` Automation scripts to configure environment.
 
 `config.sh`: Centralized environment variables and shared configurations.
