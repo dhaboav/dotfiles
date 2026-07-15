@@ -1,14 +1,40 @@
 # dotfiles
 
-A central repository for Linux configurations and automated installation scripts.
+Automated Linux (Ubuntu distro) setup scripts and configurations.
 
 ## 🛠 Directory Overview
 
-`configs/` This directory contains config file for starship.
+`config/` Contains files mapped to the system `~/.config/` directory.
 
-`scripts/` This directory contains scripts to installing things:
+`home/` Contains files mapped to the system `~/` directory(e.g., .zshrc).
 
-* install_font.sh: An executable script to install the JetBrainsMono Nerd font.
-* install_ros2.sh: An executable script to install ROS2 and its required packages.
+`scripts/` Automation scripts to configure environment.
 
-  *Note*: You need to add `chmod +x` permission for this directory, or it will not work.
+`config.sh`: Centralized environment variables and shared configurations.
+
+## 🚀 Getting Started
+
+- Prerequisites
+
+  Ensure scripts have execution permissions before running them:
+  ```bash
+  chmod +x scripts/*.sh
+  ```
+
+- Installation
+
+  To perform a full terminal and environment setup, run the master installation script:
+  ```bash
+  ./scripts/install_zsh.sh
+  ```
+  > Note: You may need to log out and log back in for changes (such as the default shell) to take effect.
+
+## 📋 Available Scripts
+
+| Script | Description |
+|--------|-------------|
+| `install_font.sh` | Installs required fonts (e.g., JetBrainsMono Nerd Font).    |
+| `install_ros2.sh` | Installs ROS 2 and initializes your development workspace.  |
+| `install_zsh.sh`  | Sets up Zsh, Starship, and links core configurations.       |
+| `setup_plugins.sh`| Automatically clones and manages your Zsh plugins.          |  
+
