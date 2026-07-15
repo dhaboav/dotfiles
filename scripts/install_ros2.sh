@@ -1,14 +1,16 @@
 #!/bin/bash
-# LAST UPDATE: SUNDAY, 12 JULY 2026 12:21 A.M. (UTC)
+# LAST UPDATE: WEDNESDAY, 15 JULY 2026 06:43 A.M. (UTC)
 # ROS2: https://docs.ros.org/en/lyrical/Installation/Ubuntu-Install-Debs.html
 # GZ: https://gazebosim.org/docs/latest/ros_installation/
 
 set -e
 
+SCRIPT_DIR="$(dirname "$0")"
+source "$SCRIPT_DIR/../config.sh"
+
 # --- ROS2 Version ---
 ROS_VERSION="lyrical"
 WS_PATH="$HOME/Desktop/ros2_ws"
-TARGET_SHELL_RC="$HOME/.zshrc"
 
 # --- Steps ---
 # Step 1 (Configuring locale)
@@ -43,11 +45,12 @@ cd "${WS_PATH}"
 colcon build
 
 # Step 6 (Adding ROS2 setup to shell)
-echo "[Step 6/6] Adding ROS2 setup to shell..."
-cat << EOF >> "$TARGET_SHELL_RC"
-source /opt/ros/${ROS_VERSION}/setup.bash
-source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
-WS_SETUP="$WS_PATH/install/setup.bash"
+echo "[Step 6/6] Creating zsh file..."
+cat << EOF > "$ZSH_DIR/.zsh_ros2"
+# --- ROS2 ENVIRONMENT ---
+source /opt/ros/${ROS_VERSION}/setup.zsh
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
+WS_SETUP="$WS_PATH/install/setup.zsh"
 if [[ -f "\$WS_SETUP" ]]; then
   source "\$WS_SETUP"
 fi
@@ -59,5 +62,5 @@ EOF
 
 # --- Post steps ---
 echo "[Post] Running Talker demo ( Ctrl+C to stop )......"
-source /opt/ros/${ROS_VERSION}/setup.bash
+source /opt/ros/${ROS_VERSION}/setup.zsh
 ros2 run demo_nodes_cpp talker
