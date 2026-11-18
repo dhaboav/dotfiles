@@ -5,7 +5,7 @@ grid = true
 action = "lock"
 countdown_seconds = 0.0
 enabled = true
-shortcut = "1"
+shortcut = "KP_1"
 variant = "default"
 
 [[shell.session.actions]]
@@ -14,14 +14,14 @@ countdown_seconds = 0.0
 enabled = true
 glyph = "moon"
 label = "Sleep"
-shortcut = "2"
+shortcut = "KP_2"
 variant = "default"
 
 [[shell.session.actions]]
 action = "logout"
 countdown_seconds = 0.0
 enabled = true
-shortcut = "3"
+shortcut = "KP_3"
 variant = "default"
 
 [[shell.session.actions]]
@@ -29,7 +29,7 @@ action = "reboot"
 countdown_seconds = 0.0
 enabled = true
 label = "Restart"
-shortcut = "4"
+shortcut = "KP_4"
 variant = "default"
 
 [[shell.session.actions]]

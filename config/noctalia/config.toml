@@ -1,7 +1,7 @@
 # NOCTALIA CONFIGURATION
-# Last updated: TUESDAY, 10 NOVEMBER 2026 03:17 A.M. (UTC)
+# Last updated: WEDNESDAY, 18 NOVEMBER 2026 03:57 P.M. (UTC)
 
-config_version = 16
+config_version = 20
 
 [include]
 autoload = false

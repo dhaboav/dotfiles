@@ -1,8 +1,8 @@
 [theme]
-builtin = "Catppuccin"
 mode = "dark"
 shell_mode = "dark"
 source = "builtin"
+builtin = "Catppuccin"
 pure_black_dark = true
 
 [theme.templates]

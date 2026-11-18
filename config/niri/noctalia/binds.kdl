@@ -25,6 +25,11 @@ binds {
     spawn-sh "noctalia msg panel-toggle control-center media";
   }
 
+  // Optional (Install notepad plugin first)
+  Mod+Z hotkey-overlay-title="Notepad" { 
+    spawn-sh "noctalia msg panel-toggle noctalia/notes:panel";
+  }
+
   // === BRIGHTNESS ===
   XF86MonBrightnessUp allow-when-locked=true {
     spawn-sh "noctalia msg brightness-up";

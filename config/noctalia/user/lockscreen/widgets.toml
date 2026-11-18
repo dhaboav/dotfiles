@@ -2,9 +2,10 @@
 enabled = true
 schema_version = 2
 widget_order = [
-  "lockscreen-widget-0000000000000001",
+  "lockscreen-widget-clock",
   "lockscreen-login-box@eDP-1",
-  "lockscreen-widget-0000000000000002"
+  "lockscreen-widget-date",
+  "lockscreen-widget-quote"
 ]
 
 [lockscreen_widgets.grid]
@@ -13,7 +14,6 @@ major_interval = 4
 visible = true
 
 # === Login Box ===
-
 [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
 box_height = 128.0
 box_width = 720.0
@@ -43,8 +43,7 @@ show_unlock_hint = true
 show_weather = false
 
 # === Main Clock ===
-
-[lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+[lockscreen_widgets.widget.lockscreen-widget-clock]
 box_height = 192.0
 box_width = 760.0
 cx = 960.0
@@ -55,7 +54,7 @@ placement_width = 1920.0
 rotation = 0.0
 type = "clock"
 
-[lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+[lockscreen_widgets.widget.lockscreen-widget-clock.settings]
 background = false
 clock_style = "digital"
 color = "primary"
@@ -63,8 +62,7 @@ font_family = ""
 format = "{:%H:%M:%S}"
 
 # === Date Clock ===
-
-[lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+[lockscreen_widgets.widget.lockscreen-widget-date]
 box_height = 32.0
 box_width = 256.0
 cx = 960.0
@@ -75,7 +73,28 @@ placement_width = 1920.0
 rotation = 0.0
 type = "clock"
 
-[lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+[lockscreen_widgets.widget.lockscreen-widget-date.settings]
 background = false
 clock_style = "digital"
 format = "{:%a, %b %d }"
+
+# === Quote ===
+[lockscreen_widgets.widget.lockscreen-widget-quote]
+box_height = 160.0
+box_width = 384.0
+cx = 224.0
+cy = 108.0
+output = "eDP-1"
+placement_height = 1080.0
+placement_width = 1920.0
+rotation = -0.0
+type = "label"
+
+[lockscreen_widgets.widget.lockscreen-widget-quote.settings]
+background = false
+color = "primary"
+description = "— Fang Yuan"
+font_family = "JetBrainsMono NFM ExtraBold"
+opacity = 1.0
+shadow = false
+title = "Heaven would never seal all of one’s paths!"
