@@ -3,10 +3,7 @@ layout {
   background-color "transparent"
   always-center-single-column
   center-focused-column "never"
-
-  default-column-width {
-    proportion 0.5
-  }
+  default-column-width { proportion 0.5; }
 
   preset-column-widths {
     proportion 0.33333
@@ -22,19 +19,5 @@ layout {
     proportion 1.0
   }
 
-  border {
-    off
-    width 2
-  }
-
-  focus-ring {
-    width 2
-  }
-
-  shadow {
-    softness 30
-    spread 5
-    offset x=0 y=5
-    color "#0007"
-  }
+  focus-ring { width 2; }
 }

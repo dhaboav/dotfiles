@@ -31,7 +31,7 @@ binds {
   // === WINDOW MANAGEMENT ===
   Mod+Q repeat=false { close-window; }
   Mod+F       { maximize-column; }
-  Mod+Shift+F { fullscreen-window; }
+  Mod+Ctrl+F  { fullscreen-window; }
   Mod+V       { toggle-window-floating; }
   Mod+Shift+V { switch-focus-between-floating-and-tiling; }
   Mod+W       { toggle-column-tabbed-display; }

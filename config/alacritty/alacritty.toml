@@ -13,12 +13,11 @@ history = 3023
 
 [font]
 normal = { family="JetBrainsMono NFM", style="Regular"}
-size = 18.0
+size = 14.0
 
 [cursor]
 style = { shape = "Beam", blinking = "On" }
 blink_interval = 500
-unfocused_hollow = true
 
 [mouse]
 hide_when_typing = true
