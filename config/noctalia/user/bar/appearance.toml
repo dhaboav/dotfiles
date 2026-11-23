@@ -68,3 +68,7 @@ enabled = true
 fill = "on_hover"
 opacity = 0.0
 padding = 6.0
+
+# === Dead Zone ===
+[bar.default.dead_zone.actions]
+right = "none"

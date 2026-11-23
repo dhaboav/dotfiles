@@ -1,5 +1,4 @@
 # === Left Widgets ===
-
 [widget.workspaces]
 active_pill_size = 1.0
 inactive_pill_size = 1.0
@@ -17,14 +16,14 @@ type = "spacer"
 
 [widget.taskbar]
 group_single_icon_per_app = true
-inactive_opacity = 0.5
+inactive_opacity = 0.4
 only_active_workspace = true
 show_active_indicator = false
 show_tooltip = false
 
 # === Center Widgets ===
-
 [widget.clock]
+interactive = false
 anchor = true
 capsule_foreground = "primary"
 color = "primary"
@@ -32,9 +31,9 @@ font_weight = 700
 format = "{:%-I:%M:%S %p} · {:%a %d}"
 
 # === Right Widgets ===
-
 # System monitoring
 [widget.cpu]
+interactive = false
 show_tooltip = false
 visualization = "none"
 
@@ -45,24 +44,26 @@ visualization = "none"
 
 # Network
 [widget.network]
+interactive = false
 show_label = false
 show_tooltip = false
 
 [widget.network_rx]
-glyph = "arrow-down"
 interactive = false
+glyph = "arrow-down"
 network_speed_decimal_places = 0
 network_speed_unit = "mb"
 visualization = "none"
 
 [widget.network_tx]
-glyph = "arrow-up"
 interactive = false
+glyph = "arrow-up"
 network_speed_unit = "mb"
 visualization = "none"
 
 # Audio
 [widget.input_volume]
+interactive = false
 type = "volume"
 device = "input"
 show_label = false
@@ -71,9 +72,10 @@ hide_when_inactive = false
 
 # Bluetooth
 [widget.bluetooth]
+interactive = false
 hide_when_no_connected_device = false
 
 # Battery
 [widget.battery]
-display_mode = "graphic"
 interactive = false
+display_mode = "graphic"

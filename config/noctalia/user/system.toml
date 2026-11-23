@@ -16,3 +16,11 @@ enabled = true
 
 [nightlight]
 temperature_night = 5400
+
+[notification]
+background_opacity = 0.0
+
+[osd]
+background_opacity = 0.0  
+border_color = "primary"
+offset_x = 0

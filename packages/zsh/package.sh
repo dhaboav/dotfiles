@@ -76,7 +76,7 @@ uninstall_plugins() {
 
 check_config() {
   [[ -f "$ZSHRC" ]] &&
-    cmp -s "$ZSHRC_SOURCE" "$ZSHRC" &&
+    [[ "$(head -n 1 "$ZSHRC_SOURCE")" == "$(head -n 1 "$ZSHRC")" ]] &&
     [[ -L "$ZSH_INIT" ]] &&
     [[ "$(readlink -f "$ZSH_INIT")" == "$(readlink -f "$ZSH_INIT_SOURCE")" ]]
 }

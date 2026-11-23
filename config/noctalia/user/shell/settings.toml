@@ -2,6 +2,10 @@
 polkit_agent = true
 settings_show_advanced = false
 screen_time_enabled = true
+button_borders = false
+card_borders = false
+input_borders = false
+show_close_buttons = false
 
 [shell.launcher]
 categories = false
@@ -11,12 +15,17 @@ track_usage = false
 width = 600
 
 [shell.panel]
+control_center_placement = "floating"
+control_center_position = "center"
 open_near_click_control_center = true
 session_placement = "floating"
 session_position = "center"
 wallpaper_show_names = false
 wallpaper_placement = "floating"
 wallpaper_position = "center"
+border_color = "primary"
+border_width = 2.0
+transparency_mode = "glass"
 
 [shell.screenshot]
 directory= "~/Pictures/Screenshots"

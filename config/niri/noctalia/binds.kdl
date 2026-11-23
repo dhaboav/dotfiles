@@ -17,8 +17,8 @@ binds {
     spawn-sh "noctalia msg panel-toggle wallpaper";
   }
 
-  Mod+N hotkey-overlay-title="Notifications" {
-    spawn-sh "noctalia msg panel-toggle control-center notifications";
+  Mod+H hotkey-overlay-title="Control Center" {
+    spawn-sh "noctalia msg panel-toggle control-center";
   }
 
   Mod+A hotkey-overlay-title="Media Player" {
@@ -26,7 +26,7 @@ binds {
   }
 
   // Optional (Install notepad plugin first)
-  Mod+Z hotkey-overlay-title="Notepad" { 
+  Mod+N hotkey-overlay-title="Notepad" { 
     spawn-sh "noctalia msg panel-toggle noctalia/notes:panel";
   }
 

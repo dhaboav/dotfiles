@@ -2,13 +2,13 @@
 
 My personal Linux configuration and setup repository, featuring application configurations, installation scripts, and system automation.
 
-Tested on **Ubuntu 26.04.1 LTS** with **Linux kernel 7.0.0-43-generic**. Configurations are tailored to this environment and may require adjustments on other systems.
+Tested on **Ubuntu 26.04.1 LTS** with **Linux kernel 7.0.0-44-generic**. Configurations are tailored to this environment and may require adjustments on other systems.
 
 ## Preview
 
 | Desktop — Niri + Noctalia | Terminal |
 |:---:|:---:|
-| ![Desktop](./assets/desktop.png) | ![Terminal](./assets/terminal.png) |
+| ![Desktop](./assets/desktop.avif) | ![Terminal](./assets/terminal.avif) |
 
 ## Installation
 
