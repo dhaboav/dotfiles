@@ -1,5 +1,5 @@
 # NOCTALIA CONFIGURATION
-# Last updated: WEDNESDAY, 18 NOVEMBER 2026 03:57 P.M. (UTC)
+# Last updated: THURSDAY, 26 NOVEMBER 2026 04:21 A.M. (UTC)
 
 config_version = 20
 
@@ -12,4 +12,5 @@ files = [
   "user/control-center.toml",
   "user/system.toml",
   "user/theme.toml",
+  "user/plugins.toml"
 ]

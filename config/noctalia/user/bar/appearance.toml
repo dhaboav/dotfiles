@@ -6,12 +6,14 @@ radius = 80
 
 start = [
   "workspaces",
-  "spacer1",
+  "spacer_1",
   "taskbar",
 ]
 
 center = [
   "clock",
+  "spacer_2", 
+  "tray"
 ]
 
 end = [

@@ -10,7 +10,7 @@ show_tooltip = false
 occupied_color = "primary_container"
 change_color_on_hover = false
 
-[widget.spacer1]
+[widget.spacer_1]
 length = 25
 type = "spacer"
 
@@ -29,6 +29,19 @@ capsule_foreground = "primary"
 color = "primary"
 font_weight = 700
 format = "{:%-I:%M:%S %p} · {:%a %d}"
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.tray]
+capsule = true
+drawer = true
+glyph_position = "after"
+pinned = [ "discord" ]
+show_tooltip = false
+
+[widget.tray.actions]
+middle = "none"
 
 # === Right Widgets ===
 # System monitoring

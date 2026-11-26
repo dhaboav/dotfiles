@@ -1,0 +1,18 @@
+[plugins]
+auto_update = "official"
+enabled = [ "noctalia/notes" ] # Optional
+
+[[plugins.source]]
+kind = "git"
+location = "https://github.com/noctalia-dev/official-plugins"
+name = "official"
+
+[[plugins.source]]
+enabled = false
+kind = "git"
+location = "https://github.com/noctalia-dev/community-plugins"
+name = "community"
+
+# === Plugins config (optional) ===
+[plugin_settings."noctalia/notes"]
+extension = "txt"
