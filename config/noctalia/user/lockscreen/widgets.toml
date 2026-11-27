@@ -81,7 +81,7 @@ format = "{:%a, %b %d }"
 # === Quote ===
 [lockscreen_widgets.widget.lockscreen-widget-quote]
 box_height = 160.0
-box_width = 384.0
+box_width = 392.0
 cx = 224.0
 cy = 108.0
 output = "eDP-1"
@@ -91,7 +91,12 @@ rotation = -0.0
 type = "label"
 
 [lockscreen_widgets.widget.lockscreen-widget-quote.settings]
-background = false
+background = true
+background_color = "primary"
+background_opacity = 0.0
+background_padding = 16
+background_radius = 0
+
 color = "primary"
 description = "— Fang Yuan"
 font_family = "JetBrainsMono NFM ExtraBold"
